@@ -33,8 +33,6 @@ assembly_info:
   file: \Objectivity.Bot.HtmlBuilder\Properties\AssemblyInfo.cs
   assembly_version: '{env:APPVEYOR_REPO_TAG_NAME}'
   assembly_file_version: '{env:APPVEYOR_REPO_TAG_NAME}'
-  on:
-      appveyor_repo_tag: true
 environment:
   NugetApiKey:
     secure: Uv0dZyhFkHDm+qsH+qhtnM35q/U8pbVDBUWWlvP0VcCkOB26TOCDM+28wcVVKnao
