@@ -11,17 +11,7 @@ before_build:
 
     {
 
-    $sfbDir = (get-item $PSScriptRoot )
-
-    $appConfigFile = [IO.Path]::Combine($sfbDir, 'Objectivity.Bot.HtmlBuilder\Objectivity.Bot.HtmlBuilder.nuspec')
-
-    $appConfig = New-Object XML;
-
-    $appConfig.Load($appConfigFile);
-
-    $appConfig.package.metadata.version = "$env:APPVEYOR_REPO_TAG_NAME";
-
-    $appConfig.Save($appConfigFile);
+    .\Update-Nuspec.ps1 -version "$APPVEYOR_REPO_TAG_NAME"
 
     }
 build:
