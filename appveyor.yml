@@ -11,7 +11,7 @@ before_build:
 
     {
 
-    .\Update-Nuspec.ps1 -version '$(APPVEYOR_REPO_TAG_NAME)'
+    .\Update-Nuspec.ps1 -version "$env:APPVEYOR_REPO_TAG_NAME"
 
     }
 build:
