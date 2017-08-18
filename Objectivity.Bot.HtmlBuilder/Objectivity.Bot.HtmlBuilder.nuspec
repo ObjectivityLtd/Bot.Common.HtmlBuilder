@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Objectivity.Bot.HtmlBuilder</id>
-        <version>1.0.0</version>
+        <version>0.0.4</version>
         <authors>Objectivity Bespoke Software Specialists</authors>
         <projectUrl>https://github.com/ObjectivityLtd/Bot.Common</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
