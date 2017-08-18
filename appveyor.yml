@@ -1,4 +1,4 @@
-version: 1.0.{build}
+version: 0.0.{build}
 before_build:
 - cmd: nuget restore
 build:
@@ -6,7 +6,7 @@ build:
 test: off
 assembly_info:
   patch: true
-  file: /Objectivity.Bot.HtmlBuilder/Properties/AssemblyInfo.cs
+  file: \Objectivity.Bot.HtmlBuilder\Properties\AssemblyInfo.cs
   assembly_version: '{version}'
   assembly_file_version: '{version}'
 environment:
