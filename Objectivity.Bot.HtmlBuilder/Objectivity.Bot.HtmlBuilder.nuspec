@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Objectivity.Bot.HtmlBuilder</id>
+        <version>1.0.0</version>
+        <authors>Objectivity Bespoke Software Specialists</authors>
+        <projectUrl>https://github.com/ObjectivityLtd/Bot.Common</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Builds html responses from bot</description>
+        <tags>C#, utils</tags>
+    </metadata>
+    <files>
+        <file src="bin\Release\Objectivity.Bot.HtmlBuilder.dll" target="lib\Objectivity.Bot.HtmlBuilder.dll" />
+    </files>
+</package>
