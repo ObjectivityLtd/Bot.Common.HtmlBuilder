@@ -1,4 +1,4 @@
-namespace Objectivity.Bot.HtmlBuilder
+namespace Objectivity.Bot.HtmlBuild
 {
     public enum Decoration
     {

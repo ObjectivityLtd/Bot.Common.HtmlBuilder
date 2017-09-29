@@ -1,4 +1,4 @@
-﻿namespace Objectivity.Bot.HtmlBuilder.Tests
+﻿namespace Objectivity.Bot.HtmlBuild.Tests
 {
     using System;
     using System.Collections.Generic;
@@ -7,6 +7,8 @@
 
     public class HtmlBuilderTests
     {
+        private static string defaultLinkColor = "#0066CC";
+
         [Fact]
         public void Whether_HtmlBuilder_BoldsText_On_Bold()
         {
@@ -42,7 +44,7 @@
 
             var result = unit.Build();
 
-            result.Should().Be("<a href=\"http://google.com\">google</a>");
+            result.Should().Be($"<a style=\"color: {defaultLinkColor}\" href=\"http://google.com\">google</a>");
         }
 
         [Fact]
@@ -67,7 +69,7 @@
 
             var result = unit.Build();
 
-            result.Should().Be("<a href=\"http://google.com\"><b>google</b></a>");
+            result.Should().Be($"<a style=\"color: {defaultLinkColor}\" href=\"http://google.com\"><b>google</b></a>");
         }
 
         [Fact]
@@ -79,7 +81,8 @@
 
             var result = unit.Build();
 
-            result.Should().Be("<ul><li>a</li><li>b</li></ul>");
+            result.Should().Contain($"<ul><li style=\"color: {defaultLinkColor}\"><span style=\"color: black\">a</span></li>"
+                                    + $"<li style=\"color: {defaultLinkColor}\"><span style=\"color: black\">b</span></li></ul>");
         }
 
         [Fact]
@@ -94,11 +97,11 @@
 
             var result = unit.Build();
 
-            result.Should().Be("<ul><li>a</li><li><b>b</b></li></ul>");
+            result.Should().Contain("<b>b</b>");
         }
 
         [Fact]
-        public void Whether_HtmlBuilder_ProducesSimpleSite_On_MulitipleCalls()
+        public void Whether_HtmlBuilder_ProducesSimpleSite_On_MultipleCalls()
         {
             var unit = new HtmlBuilder();
 
@@ -112,7 +115,10 @@
 
             var result = unit.Build();
 
-            result.Should().Be("<a href=\"http://test.com\">test</a><br /><a href=\"http://google.com\"><b>google</b></a><br /><ul><li>a</li><li>b</li></ul><br />footer");
+            result.Should().Be($"<a style=\"color: {defaultLinkColor}\" href=\"http://test.com\">test</a><br />"
+                               + $"<a style=\"color: {defaultLinkColor}\" href=\"http://google.com\"><b>google</b></a><br />"
+                               + $"<ul><li style=\"color: {defaultLinkColor}\"><span style=\"color: black\">a</span></li>"
+                               + $"<li style=\"color: {defaultLinkColor}\"><span style=\"color: black\">b</span></li></ul><br />footer");
         }
     }
 }

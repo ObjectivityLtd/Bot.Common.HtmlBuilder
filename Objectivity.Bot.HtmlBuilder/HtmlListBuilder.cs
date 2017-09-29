@@ -1,4 +1,4 @@
-namespace Objectivity.Bot.HtmlBuilder
+namespace Objectivity.Bot.HtmlBuild
 {
     using System.Text;
 
@@ -7,9 +7,9 @@ namespace Objectivity.Bot.HtmlBuilder
         private StringBuilder html = new StringBuilder();
         private string listType;
 
-        public HtmlListBuilder() : this("ul")
+        public HtmlListBuilder()
+            : this("ul")
         {
-            
         }
 
         public HtmlListBuilder(string listType)

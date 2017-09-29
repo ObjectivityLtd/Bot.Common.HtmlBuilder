@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		AnalysersTests.ruleset = AnalysersTests.ruleset
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.Bot.HtmlBuilder", "Objectivity.Bot.HtmlBuilder\Objectivity.Bot.HtmlBuilder.csproj", "{CAFC9E46-5248-4841-8108-5F47AF94186A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.Bot.HtmlBuild", "Objectivity.Bot.HtmlBuilder\Objectivity.Bot.HtmlBuild.csproj", "{CAFC9E46-5248-4841-8108-5F47AF94186A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.Bot.HtmlBuilder.Tests", "Objectivity.Bot.HtmlBuilder.Tests\Objectivity.Bot.HtmlBuilder.Tests.csproj", "{B202BF3C-D6AC-4297-B9C7-E5C235FE519B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.Bot.HtmlBuild.Tests", "Objectivity.Bot.HtmlBuilder.Tests\Objectivity.Bot.HtmlBuild.Tests.csproj", "{B202BF3C-D6AC-4297-B9C7-E5C235FE519B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

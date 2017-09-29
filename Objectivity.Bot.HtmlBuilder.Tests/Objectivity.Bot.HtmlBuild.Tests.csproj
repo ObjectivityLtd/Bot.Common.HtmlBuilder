@@ -8,8 +8,8 @@
     <ProjectGuid>{B202BF3C-D6AC-4297-B9C7-E5C235FE519B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Objectivity.Bot.HtmlBuilder.Tests</RootNamespace>
-    <AssemblyName>Objectivity.Bot.HtmlBuilder.Tests</AssemblyName>
+    <RootNamespace>Objectivity.Bot.HtmlBuild.Tests</RootNamespace>
+    <AssemblyName>Objectivity.Bot.HtmlBuild.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -32,6 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\AnalysersTests.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentAssertions, Version=4.19.3.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
@@ -66,9 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Objectivity.Bot.HtmlBuilder\Objectivity.Bot.HtmlBuilder.csproj">
+    <ProjectReference Include="..\Objectivity.Bot.HtmlBuilder\Objectivity.Bot.HtmlBuild.csproj">
       <Project>{cafc9e46-5248-4841-8108-5f47af94186a}</Project>
-      <Name>Objectivity.Bot.HtmlBuilder</Name>
+      <Name>Objectivity.Bot.HtmlBuild</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
