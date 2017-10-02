@@ -10,6 +10,6 @@
         <tags>C#, utils</tags>
     </metadata>
     <files>
-        <file src="bin\Release\Objectivity.Bot.HtmlBuilder.dll" target="lib\Objectivity.Bot.HtmlBuilder.dll" />
+        <file src="bin\Release\Objectivity.Bot.HtmlBuild.dll" target="lib\Objectivity.Bot.HtmlBuild.dll" />
     </files>
 </package>
